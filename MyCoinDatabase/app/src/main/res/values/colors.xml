@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- CUSTOM MEUS -->
+    <color name="colorBlueDark">#273b51</color>
+    <color name="colorBlueHeader">#4E6E92</color>
+    <color name="colorBlueButton">#8CB3DE</color>
+    <color name="White">#FFFFFF</color>
+
+</resources>
