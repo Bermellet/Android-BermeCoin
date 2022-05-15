@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textNom"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:text="Nom"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/labelValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textValor"
+        android:layout_alignBottom="@+id/textValor"
+        android:layout_alignStart="@+id/textNom"
+        android:text="Valor:"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textValor"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Valor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/textAny"
+        android:layout_alignEnd="@+id/textNom" />
+
+    <TextView
+        android:id="@+id/labelPais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/labelAny"
+        android:layout_marginEnd="7dp"
+        android:layout_toStartOf="@+id/textPais"
+        android:text="País:"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textPais"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textAny"
+        android:layout_alignBottom="@+id/textAny"
+        android:layout_alignEnd="@+id/textDescripcio"
+        android:text="País"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelAny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textAny"
+        android:layout_alignBottom="@+id/textAny"
+        android:layout_alignStart="@+id/labelValor"
+        android:text="Any:"
+        android:textSize="9sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textAny"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textValor"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="7dp"
+        android:text="Any"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textDescripcio"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0.03"
+        android:text="Descripcio"
+        android:layout_below="@+id/textPais"
+        android:layout_alignStart="@+id/labelAny" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="71dp"
+        android:src="@android:drawable/ic_delete"
+        android:layout_alignTop="@+id/textNom"
+        android:layout_toEndOf="@+id/textPais"
+        android:layout_marginStart="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.00"
+        android:adjustViewBounds="false"
+        android:src="@android:drawable/ic_delete"
+        android:layout_alignTop="@+id/textPais"
+        android:layout_alignStart="@+id/imageView1" />
+
+</RelativeLayout>
